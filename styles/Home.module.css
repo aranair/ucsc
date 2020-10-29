@@ -8,12 +8,24 @@
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.bannerContainer {
+  padding-top: 180px;
+  background: linear-gradient(#002846, rgba(0,40,70,0.7)),
+    url(http://ucsc.sg/assets/banner-e289bde671e6d507eeca7e5ced0a381de37f9d3cc8ab5ff1dbb14023b1500b3d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  background-color: transparent;
+  height: 70vh;
 }
 
 .footer {
@@ -35,8 +47,19 @@
   align-items: center;
 }
 
+.title {
+  color: white;
+}
+
 .title a {
   color: #0070f3;
+  text-decoration: none;
+}
+
+.titleSlogan {
+  color: #EA8500;
+  font-weight: 300;
+  letter-spacing: 4px;
   text-decoration: none;
 }
 
@@ -49,10 +72,10 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
 }
 
 .title,
+.titleSlogan,
 .description {
   text-align: center;
 }

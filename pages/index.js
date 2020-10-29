@@ -1,65 +1,75 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Menu from './menu'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import Container from '@material-ui/core/Container';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Typography from '@material-ui/core/Typography';
+
+import classes from '../styles/Home.module.css'
+
+import About from './about'
+import Location from './location'
+import Sponsors from './sponsors'
+import Membership from './membership'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  whiteIconContainer: {
+    justifyContent: 'center',
+    display: 'flex',
+  },
+  whiteIcon: {
+    fontSize: 40,
+    color: 'white',
+  },
+  title: {
+    color: 'white',
+    textAlign: 'center',
+    fontFamily: 'Lato, sans-serif',
+  }
+}));
 
 export default function Home() {
+  const styles = useStyles();
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <Container maxWidth="false">
+      <Menu />
+      <main>
+        <div className={classes.bannerContainer}>
+          <div className={classes.banner}>
+            <Typography variant="h1" className={styles.title}>
+              United Condo Squash Club
+            </Typography>
+            <br/>
+            <Typography variant="h6" className={classes.titleSlogan}>
+              LIVE AND BREATHE SQUASH
+            </Typography>
+          </div>
+          <Container maxWidth="xl" className={styles.whiteIconContainer}>
+            <ExpandMoreIcon className={styles.whiteIcon}/>
+          </Container>
         </div>
+
+        <Sponsors />
+        <About />
+        <Location />
+        <Membership />
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+      <footer className={classes.footer}>
+        <a href="https://aranair.github.io" target="_blank" rel="noopener noreferrer">
+          Copyright © 2020 Boa Ho Man. All rights reserved.
         </a>
       </footer>
-    </div>
+    </Container>
   )
 }
