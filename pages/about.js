@@ -8,7 +8,6 @@ import Container from '@material-ui/core/Container';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 
-import classes from '../styles/Home.module.css'
 import theme from '../theme'
 
 const useStyles = makeStyles((theme) => ({
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 export default function About() {
   const styles = useStyles(theme);
   return (
-      <Container maxWidth="false" className={styles.container} id='about-us'>
+      <div className={styles.container} id='about-us'>
         <Container maxWidth="md">
           <Typography variant="h3">About Us</Typography>
           <Container>
@@ -49,6 +48,6 @@ export default function About() {
             </Typography>
           </Container>
         </Container>
-      </Container>
+      </div>
   )
 }

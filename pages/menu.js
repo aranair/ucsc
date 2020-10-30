@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     flexGrow: 1,
-    fontWeight: 900,
+    fontWeight: 700,
+    letterSpacing: 1,
   },
   appBar: {
     background: '#002846',
@@ -40,22 +41,22 @@ export default function Menu() {
         <Typography variant="h6" className={styles.logo}>
           UCSC
         </Typography>
-        <ButtonLink href="#about-us" className={styles.menuButton} color="inherit">
+        <ButtonLink href="/#about-us" className={styles.menuButton} color="inherit">
           About Us
         </ButtonLink>
-        <ButtonLink href="#location" className={styles.menuButton} color="inherit">
+        <ButtonLink href="/#location" className={styles.menuButton} color="inherit">
           Location
         </ButtonLink>
-        <ButtonLink href="#membership" className={styles.menuButton} color="inherit">
+        <ButtonLink href="/#membership" className={styles.menuButton} color="inherit">
           Membership
         </ButtonLink>
-        <ButtonLink href="#contact-us" className={styles.menuButton} color="inherit">
+        <ButtonLink href="/#contact-us" className={styles.menuButton} color="inherit">
           Contact Us
         </ButtonLink>
         <ButtonLink href="/coaching-panel" className={styles.menuButton} color="inherit">
           Coaching Panel
         </ButtonLink>
-        <ButtonLink href="#committee" className={styles.menuButton} color="inherit">
+        <ButtonLink href="/committee" className={styles.menuButton} color="inherit">
           Committee
         </ButtonLink>
       </Toolbar>

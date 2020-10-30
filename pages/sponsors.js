@@ -8,8 +8,6 @@ import Container from '@material-ui/core/Container';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 
-import classes from '../styles/Home.module.css'
-
 const useStyles = makeStyles((theme) => ({
   sponsorListContainer: {
     display: 'flex',
@@ -20,9 +18,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Sponsors() {
   const styles = useStyles();
+
   return (
     <Grid container spacing={3} justify='center' className={styles.sponsorListContainer} id='sponsors'>
-      <Grid item xs={12} md={3} alignItems='center'>
+      <Grid item xs={12} md={3}>
         <Typography variant="h6"> Proudly Sponsored By: </Typography>
       </Grid>
       <Grid item md={3}>

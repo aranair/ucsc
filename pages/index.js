@@ -1,4 +1,3 @@
-import Menu from './menu'
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -7,8 +6,6 @@ import GridListTile from '@material-ui/core/GridListTile';
 import Container from '@material-ui/core/Container';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
-
-import classes from '../styles/Home.module.css'
 
 import About from './about'
 import Location from './location'
@@ -35,28 +32,46 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     textAlign: 'center',
     fontFamily: 'Lato, sans-serif',
+    fontWeight: 700,
+  },
+  titleSlogan: {
+    color: '#EA8500',
+    fontWeight: 300,
+    letterSpacing: '4px',
+    textDecoration: 'none',
+    textAlign: 'center',
+  },
+  banner: {
+    backgroundColor: 'transparent',
+    height: '70vh',
+  },
+  bannerContainer: {
+    paddingTop: '200px',
+    background: 'linear-gradient(#002846, rgba(0,40,70,0.7)), url(/banner.jpg)',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
   }
 }));
 
 export default function Home() {
   const styles = useStyles();
+
   return (
-    <Container maxWidth="false">
-      <Menu />
+    <React.Fragment>
       <main>
-        <div className={classes.bannerContainer}>
-          <div className={classes.banner}>
+        <div className={styles.bannerContainer}>
+          <div className={styles.banner}>
             <Typography variant="h1" className={styles.title}>
               United Condo Squash Club
             </Typography>
             <br/>
-            <Typography variant="h6" className={classes.titleSlogan}>
+            <Typography variant="h6" className={styles.titleSlogan}>
               LIVE AND BREATHE SQUASH
             </Typography>
           </div>
-          <Container maxWidth="xl" className={styles.whiteIconContainer}>
+          <div className={styles.whiteIconContainer}>
             <ExpandMoreIcon className={styles.whiteIcon}/>
-          </Container>
+          </div>
         </div>
 
         <Sponsors />
@@ -64,12 +79,6 @@ export default function Home() {
         <Location />
         <Membership />
       </main>
-
-      <footer className={classes.footer}>
-        <a href="https://aranair.github.io" target="_blank" rel="noopener noreferrer">
-          Copyright © 2020 Boa Ho Man. All rights reserved.
-        </a>
-      </footer>
-    </Container>
+    </React.Fragment>
   )
 }

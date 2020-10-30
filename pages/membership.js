@@ -8,8 +8,6 @@ import Container from '@material-ui/core/Container';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 
-import classes from '../styles/Home.module.css'
-
 const useStyles = makeStyles((theme) => ({
   container: {
     background: '#002846',
@@ -28,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const styles = useStyles();
   return (
-    <Container maxWidth="false" className={styles.container}>
+    <Container maxWidth={false} className={styles.container}>
       <Container maxWidth="lg">
         <Grid container spacing={3} id='membership' justify='center'>
           <Grid item md={12}>

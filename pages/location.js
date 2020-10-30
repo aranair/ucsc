@@ -8,8 +8,6 @@ import Container from '@material-ui/core/Container';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 
-import classes from '../styles/Home.module.css'
-
 const useStyles = makeStyles((theme) => ({
   homeCourtsContainer: {
     display: 'flex',
@@ -19,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     borderTop: '1px solid #eaeaea',
     textAlign: 'center',
-    backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('http://ucsc.sg/assets/yck-772e97605dc4628d583ec400b0e25d6ff1b9ba9a656c073dc904a3a16cf6f9b8.jpg')`,
+    backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('yck.jpg')`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     minHeight: 580,
@@ -36,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Location() {
   const styles = useStyles();
   return (
-    <Grid spacing={3} className={styles.homeCourtsContainer} id='location'>
+    <div className={styles.homeCourtsContainer} id='location'>
       <Grid container spacing={3} justify='center' item xs={12} md={6} className={styles.cards}>
         <Grid item md={12}>
           <Typography variant="h4">Home Courts</Typography>
@@ -49,10 +47,11 @@ export default function Location() {
           </Typography>
         </Grid>
       </Grid>
+
       <Grid container spacing={3} justify='center' item xs={12} md={6} className={styles.cards}>
         <Grid item md={12}>
           <Typography variant="h4">Methodist Girls' School</Typography>
-          <Typography variant='subtitle'>11 Blackmore Dr, Singapore 599986</Typography>
+          <Typography variant='subtitle1'>11 Blackmore Dr, Singapore 599986</Typography>
         </Grid>
         <Grid item md={6}>
           <Container>
@@ -64,6 +63,6 @@ export default function Location() {
           </Container>
         </Grid>
       </Grid>
-    </Grid>
+    </div>
   )
 }
