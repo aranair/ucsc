@@ -19,8 +19,15 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     flexGrow: 1,
-    fontWeight: 700,
     letterSpacing: 1,
+    marginRight: theme.spacing(5),
+    letterSpacing: 2,
+    textTransform: 'none',
+    fontSize: 16,
+    textDecoration: 'none',
+  },
+  logoText: {
+    fontWeight: 700,
   },
   appBar: {
     background: '#002846',
@@ -53,9 +60,11 @@ export default function Navbar() {
   return (
     <AppBar elevation={0} position="fixed" className={styles.appBar}>
       <Toolbar>
-        <Typography variant="h6" className={styles.logo}>
-          UCSC
-        </Typography>
+        <ButtonLink href="/" className={styles.logo} color="inherit">
+          <Typography variant="h6" className={styles.logoText}>
+            UCSC
+          </Typography>
+        </ButtonLink>
         <Hidden mdDown>
           <ButtonLink href="/#about-us" className={styles.menuButton} color="inherit">
             About Us
