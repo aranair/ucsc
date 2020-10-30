@@ -7,7 +7,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 
-import members from './members'
+import members from '../../data/members'
 
 const useStyles = makeStyles((theme) => ({
   bgContainer: {

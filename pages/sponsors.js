@@ -25,13 +25,13 @@ export default function Sponsors() {
         <Typography variant="h6"> Proudly Sponsored By: </Typography>
       </Grid>
       <Grid item md>
-        <img height="130" src="http://ucsc.sg/assets/orchard-physio-ff323ff6e150079fa9436331393d3501985b669c822df31415ac867e381865b8.png" />
+        <img height="130" src="/orchardphysio.png" />
       </Grid>
       <Grid item md>
-        <img height="130" src="http://ucsc.sg/assets/indusnri-6d393085ff50d9a48a8587f9c9bf43c1f0ccee3ca0d71161868d8c81c5eb9b89.png" />
+        <img height="130" src="indusnri.png" />
       </Grid>
       <Grid item md>
-        <img height="130" src="http://ucsc.sg/assets/gene-ethics-d0171aed655fe6eec2c61c6f6bb9ffb535d0da000ea2af05c8410a34d83b0b1f.png" />
+        <img height="130" src="geneethics.png" />
       </Grid>
     </Grid>
   )
