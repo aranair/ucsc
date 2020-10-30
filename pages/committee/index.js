@@ -7,9 +7,16 @@ import Container from '@material-ui/core/Container';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 
-import Menu from '../menu'
-
 const useStyles = makeStyles((theme) => ({
+  container: {
+    paddingTop: 80,
+  },
+  title: {
+    fontSize: '4em',
+    textAlign: 'center',
+    fontFamily: 'Lato, sans-serif',
+    fontWeight: 700,
+  },
 }));
 
 export default function Committee() {
@@ -17,12 +24,11 @@ export default function Committee() {
 
   return (
     <React.Fragment>
-      <Menu />
-      <main>
+      <Container maxWidth={false} className={styles.container}>
         <Typography variant="h1" className={styles.title}>
           Our Committee Members
         </Typography>
-      </main>
+      </Container>
     </React.Fragment>
   )
 }

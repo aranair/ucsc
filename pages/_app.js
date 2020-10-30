@@ -5,19 +5,31 @@ import React from 'react';
 import { ServerStyleSheets, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-import Menu from './menu'
+import Navbar from './navbar'
 import theme from '../theme';
 
 import '../styles/globals.css'
 
 const useStyles = makeStyles((theme) => ({
+  main: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
   footer: {
     width: '100%',
-    height: 100,
+    height: 150,
+    color: 'white',
+    background: '#002846',
     borderTop: '1px solid #eaeaea',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  footerLink: {
+    textDecoration: 'none',
   }
 }));
 
@@ -42,10 +54,12 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Menu />
-        <Component {...pageProps} />
+        <Navbar />
+        <main className={styles.main}>
+          <Component {...pageProps} />
+        </main>
         <footer className={styles.footer}>
-          <a href="https://aranair.github.io" target="_blank" rel="noopener noreferrer">
+          <a className={styles.footerLink} href="https://aranair.github.io" target="_blank" rel="noopener noreferrer">
             Copyright © 2020 Boa Ho Man. All rights reserved.
           </a>
         </footer>

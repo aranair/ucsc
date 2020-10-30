@@ -1,4 +1,3 @@
-import Menu from './menu'
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -26,22 +25,22 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const styles = useStyles();
   return (
-    <Container maxWidth={false} className={styles.container}>
+    <Container maxWidth={false} className={styles.container} id='membership'>
       <Container maxWidth="lg">
-        <Grid container spacing={3} id='membership' justify='center'>
-          <Grid item md={12}>
+        <Grid container spacing={3} justify='center'>
+          <Grid item xs={12}>
             <Typography variant="h4">Join Us!</Typography>
           </Grid>
 
-          <Grid container item spacing={3} md={12}>
-            <Grid item md={4}>
+          <Grid container item spacing={3} xs={12}>
+            <Grid item xs={12} md={4}>
               <Typography variant="h5" className={styles.subHeading}>Annual Membership</Typography>
               <Typography variant="h6">
                 All court fees and registration fees are included in the annual
                 membership fee of $125 for Students and $250 for Adults.
               </Typography>
             </Grid>
-            <Grid item md={4}>
+            <Grid item xs={12} md={4}>
               <Typography variant="h5" className={styles.subHeading}>Guest Pass</Typography>
               <Typography variant="h6">
                 Non-members are welcome to join us on any of the social squash days
@@ -49,7 +48,7 @@ export default function Home() {
                 that we can make the necessary arrangements.
               </Typography>
             </Grid>
-            <Grid item md={4}>
+            <Grid item xs={12} md={4}>
               <Typography variant="h5" className={styles.subHeading}>Trials</Typography>
               <Typography variant="h6">
                 If you have prior squash experience and are interested in joining us,

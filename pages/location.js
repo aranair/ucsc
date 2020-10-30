@@ -1,4 +1,3 @@
-import Menu from './menu'
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -33,9 +32,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Location() {
   const styles = useStyles();
+
   return (
-    <div className={styles.homeCourtsContainer} id='location'>
-      <Grid container spacing={3} justify='center' item xs={12} md={6} className={styles.cards}>
+    <Grid container className={styles.homeCourtsContainer} id='location'>
+      <Grid container spacing={2} justify='center' item xs={12} md={6} className={styles.cards}>
         <Grid item md={12}>
           <Typography variant="h4">Home Courts</Typography>
         </Grid>
@@ -48,10 +48,10 @@ export default function Location() {
         </Grid>
       </Grid>
 
-      <Grid container spacing={3} justify='center' item xs={12} md={6} className={styles.cards}>
+      <Grid container spacing={2} justify='center' item xs={12} md={6} className={styles.cards}>
         <Grid item md={12}>
           <Typography variant="h4">Methodist Girls' School</Typography>
-          <Typography variant='subtitle1'>11 Blackmore Dr, Singapore 599986</Typography>
+          <Typography variant='body1'>11 Blackmore Dr, Singapore 599986</Typography>
         </Grid>
         <Grid item md={6}>
           <Container>
@@ -63,6 +63,6 @@ export default function Location() {
           </Container>
         </Grid>
       </Grid>
-    </div>
+    </Grid>
   )
 }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Button from '@material-ui/core/Button'
 
 const ButtonLink = ({ className, href, hrefAs, children }) => (
-  <Link href={href} as={hrefAs}>
+  <Link href={href} as={hrefAs} passHref>
     <a className={className}>
       {children}
     </a>
