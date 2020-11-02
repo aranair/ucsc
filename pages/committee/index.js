@@ -51,7 +51,7 @@ export default function Committee() {
             {
               members.map(m => {
                 return (
-                  <React.Fragment id={m.id}>
+                  <React.Fragment>
                     <Grid item md={3}>
                       <Avatar alt={m.name} src={`/${m.id}.jpg`} className={styles.large} />
                     </Grid>
