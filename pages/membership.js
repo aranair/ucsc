@@ -52,7 +52,7 @@ export default function Home() {
               <Typography variant="h5" className={styles.subHeading}>Trials</Typography>
               <Typography variant="h6">
                 If you have prior squash experience and are interested in joining us,
-                feel free to contact us and we will arrange a session for you!
+                feel free to contact us and we will arrange a trial session for you!
               </Typography>
             </Grid>
           </Grid>

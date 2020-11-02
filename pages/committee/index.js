@@ -3,6 +3,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import GridList from '@material-ui/core/GridList';
+import Divider from '@material-ui/core/Divider';
 import GridListTile from '@material-ui/core/GridListTile';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -45,7 +46,6 @@ export default function Committee() {
         <Typography variant="h1" className={styles.title}>
           Committee Members
         </Typography>
-
         <Container maxWidth="sm">
           <Grid container spacing={5} justify='center'>
             {

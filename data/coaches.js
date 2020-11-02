@@ -21,16 +21,6 @@ const coaches = [
       "Coaching experience since 1996",
     ],
   },
-  {
-    id: 'philipmockridge',
-    name: 'Philip Mockridge',
-    title: 'Winner of Singapore Masters, 2014',
-    desc: [
-      "For more information, kindly visit his coaching site below:"
-    ],
-    link: 'http://www.squashpassion.com/',
-    linkText: 'Squash Passion',
-  },
 ]
 
 export default coaches;

@@ -12,6 +12,7 @@ import Location from './location'
 import Sponsors from './sponsors'
 import Membership from './membership'
 import Contact from './contact'
+import UsefulLinks from './links'
 
 const useStyles = makeStyles((theme) => ({
   whiteIconContainer: {
@@ -84,6 +85,7 @@ export default function Home() {
       <Location />
       <Membership />
       <Contact />
+      <UsefulLinks />
     </React.Fragment>
   )
 }

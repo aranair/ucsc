@@ -78,6 +78,9 @@ export default function Navbar() {
           <ButtonLink href="/#contact-us" className={styles.menuButton} color="inherit">
             Contact Us
           </ButtonLink>
+          <ButtonLink href="/#useful-links" className={styles.menuButton} color="inherit">
+            Useful Links
+          </ButtonLink>
           <ButtonLink href="/coaching-panel" className={styles.menuButton} color="inherit">
             Coaching Panel
           </ButtonLink>
@@ -94,6 +97,7 @@ export default function Navbar() {
             <MenuLink text="Location" href="/#location" onClick={handleClose}/>
             <MenuLink text="Membership" href="/#membership" onClick={handleClose}/>
             <MenuLink text="Contact Us" href="/#contact-us" onClick={handleClose}/>
+            <MenuLink text="Useful Links" href="/#useful-links" onClick={handleClose}/>
             <MenuLink text="Coaching Panel" href="/coaching-panel" onClick={handleClose}/>
             <MenuLink text="Committee" href="/committee" onClick={handleClose}/>
           </Menu>

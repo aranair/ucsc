@@ -8,7 +8,7 @@ const members = [
   {
     id: 'michaeltan',
     name: 'Michael Tan',
-    title: 'Vice President',
+    title: '',
     desc: "Sometimes banker, full-time squash fanatic! Dedicated to converting Singapore Sports officials into fellow supporters of a truly phenomenal global sport, and to set medal expectations aside.",
   },
   {
@@ -30,6 +30,12 @@ const members = [
     desc: "I first started playing squash when I was around 12 years of age and have never stopped since then! I love the game and I love UCSC simply because it values a good attitude, sportsmanship and having fun over the pressure to win all of the time. Of course, winning is always a bonus but it's not the focus. With a relaxed, friendly atmosphere at the club you’ll soon find that your team mates and members become like your family…..I did. I’m honoured to be included as an advisor in the UCSC committee and look forward to contributing to the growth of this already well established club. Happy squashing!",
   },
   {
+    id: 'jaheerabbas',
+    name: 'Jaheer Abbas',
+    title: '',
+    desc: "I started playing squash in 2007 when my tennis buddies got busy with life. Last of my tennis buddies introduced me to squash on the day we turned up to play tennis and it rained heavily. I felt  Squash to be weatherproof, more physical and also gives a chance to settle scores with your opponent locked in the court :-). I continued to play more often and Squash has been my main sport since 2014. UCSC is an inclusive club with a large pool of players. That makes it an ideal place to enjoy the sport and build camaraderie.",
+  },
+  {
     id: 'tanwheekee',
     name: 'Tan Whee Kee',
     title: 'Treasurer',
@@ -48,12 +54,6 @@ const members = [
     desc: "I started playing squash during the 70's. The love of the game continues to grow with me and my family. Through squash, I have made many good friends. As a result of such interaction the idea of forming UCSC was started and eventually bore fruit. My next commitment to the game is to see my two sons Marcus and Hansel playing a high level of squash and building UCSC into the most popular squash club in Singapore.",
   },
   {
-    id: 'kelvinkan',
-    name: 'Kelvin Kan',
-    title: '',
-    desc: "Started playing squash after moving into Orchid Park in 1994 mainly to get some fitness for my first love in soccer! Never in my wildest dreams that after playing socially with fellow residents and subsequently helped to form UCSC with the Bishan Park squash 'die-hards', this game and the club has given me an opportunity to meet some really nice and friendly people! Absolutely no regrets and urge any squash beginners and/or enthusiasts to 'look no further' than UCSC!!",
-  },
-  {
     id: 'bryantan',
     name: 'Bryan Tan',
     title: '',
@@ -64,18 +64,6 @@ const members = [
     name: 'Boa Ho Man',
     title: 'Webmaster',
     desc: "Software engineer by day, fanatic squasher by night. I joined UCSC only a few years ago in 2012 and its been an awesome few years with this second family!",
-  },
-  {
-    id: 'mabellow',
-    name: 'Mabel Low',
-    title: '',
-    desc: "Hi I'm Mabel! I love playing doubles and having tea/supper with the members after squash. I'm a researcher by day and a doggie mum by night.",
-  },
-  {
-    id: 'darryltan',
-    name: 'Darryl Tan',
-    title: '',
-    desc: "Hello! My name is Darryl Tan. I joined UCSC in 2008, together with my family. Since then, I have fully enjoyed my days in this amazing club. As a training ground for good proper squash, UCSC offered me an enormous variety of players to spar with. Week after week, I would be challenged with new players and new playing styles to counter. It is through the numerous social games that I have grown as both a sportsman and person in so many ways. Having said that, outside the courts, UCSC is more than just a club to me. It is also my second home. After games, it is not uncommon to find members mingling with each other while waiting for their next game - and without saying, I am no different. Personally, I feel that the club's friendly and warm culture is what fills me with happiness to be there. The friendships I have fostered are truly valuable, old and new alike. If there is one place I'd go for challenging games and a relaxing time over tea break afterwards, you know where I will be.",
   },
 ]
 
