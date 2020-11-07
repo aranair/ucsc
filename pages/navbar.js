@@ -88,7 +88,7 @@ export default function Navbar() {
             Committee
           </ButtonLink>
         </Hidden>
-        <Hidden mdUp>
+        <Hidden lgUp>
           <IconButton edge="start" className={styles.hamburger} color="inherit" onClick={handleClick} aria-label="hamburger">
             <MenuIcon />
           </IconButton>

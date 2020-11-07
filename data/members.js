@@ -15,7 +15,7 @@ const members = [
     id: 'daryleteng',
     name: 'Daryle Teng',
     title: '',
-    desc: "After 8-9 years away from squash since 1988-96, I finally came back to play after meeting a new bunch of squash enthusiats namely Joseph, Kelvin, Alfred and Andrew in the Intercon tournament.But what make me continue to play is the friendly,caring and enthusiam shown by members of OUR CLUB to promote not only squash but friendship among the sporting arena. From the formation years of UCSC and my subsequent appointment as Disciplinary Chairman, till now I am glad to announce that todate no disciplinary action has been taken against any club members. I am proud of this record not because of the existence of this post but proud of our fellow members self-discipline which made this post seem rather unnecessary. '..... ...CARING for our fellow members in every aspect of our game and life is the best discipline I hope we can achieve .............'",
+    desc: "Thanks to UCSC and the members for years of comradeship and friendship be it young or old. And Hope all those Squash enthusiasts all over the world will continue to support this superb game through the years.",
   },
   {
     id: 'bobbypang',
