@@ -35,7 +35,7 @@ export default function About() {
           are able to socialize.
           <br /><br />
           If you have competitive playing experience and are interested to become a UCSC
-          member, please reach out to us on <a href="https://www.facebook.com/UCSCsingapore/">Facebook</a>.
+          member, please reach out to us on <a href="https://www.facebook.com/UCSCsingapore/">Facebook</a> or <a href="https://www.instagram.com/ucsc.squash/">Instagram</a>.
           <br /><br />
           Be prepared for a warm friendly greeting!
         </Typography>
