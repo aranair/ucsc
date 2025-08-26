@@ -1,5 +1,7 @@
 ## UCSC Community Site
 
-Rebuilt, over Next.js 10
+- Next.js 15
+- React 18
+- MUI
 
-Copyrights 2020, Boa Ho Man
+Copyrights 2025, Boa Ho Man

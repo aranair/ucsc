@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }) {
           </main>
           <footer style={footerStyles}>
             <a style={footerLinkStyles} href="https://aranair.github.io" target="_blank" rel="noopener noreferrer">
-              Copyright © 2020 Boa Ho Man. All rights reserved.
+              Crafted by Boa Ho Man (2025)
             </a>
           </footer>
         </ThemeProvider>
