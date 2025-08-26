@@ -26,7 +26,7 @@ export default function Contact() {
         <Typography variant="h3">Contact Us</Typography>
         <br />
         <Typography variant="h6" className={styles.sectionText}>
-          Please look for us on <a target="_blank" href="https://www.facebook.com/UCSCsingapore/">Facebook</a>!
+          Please look for us on <a target="_blank" href="https://www.facebook.com/UCSCsingapore/">Facebook</a> or <a href="https://www.instagram.com/ucsc.squash/>Instagram</a>!
         </Typography>
       </Container>
     </Container>
