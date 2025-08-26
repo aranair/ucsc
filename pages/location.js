@@ -41,7 +41,7 @@ export default function Location() {
         </Grid>
         <Grid item md={6}>
           <Typography variant="h6">
-            Members are invited to come down on any of the social squash days.
+            Members are invited to come down on any of the social squash days. 
             Those who are looking to play competitively are also encouraged to
             represent the club in the Singapore National Squash League.
           </Typography>
@@ -50,15 +50,15 @@ export default function Location() {
 
       <Grid container spacing={2} justify='center' item xs={12} md={6} className={styles.cards}>
         <Grid item md={12}>
-          <Typography variant="h4">Methodist Girls' School</Typography>
-          <Typography variant='body1'>11 Blackmore Dr, Singapore 599986</Typography>
+          <Typography variant="h4">Yio Chu Kang Squash Centre</Typography>
+          <Typography variant='body1'>200 Ang Mo Kio Avenue 9 Singapore 569770</Typography>
         </Grid>
         <Grid item md={6}>
           <Container>
             <Typography variant="h6">
-              Thursdays: 7pm to 10pm
+              Mondays and Wednesdays: 7pm to 10pm
               <br />
-              Saturdays: 12pm to 4pm
+              Saturdays: 12pm to 3pm
             </Typography>
           </Container>
         </Grid>
