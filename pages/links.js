@@ -1,9 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import { makeStyles } from '@mui/styles';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 import Link from 'next/link';
 
 import theme from '../theme'
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function UsefulLinks() {
-  const styles = useStyles(theme);
+  const styles = useStyles();
 
   return (
     <Container maxWidth={false} className={styles.container} id='useful-links'>
@@ -34,14 +34,14 @@ export default function UsefulLinks() {
         <Container maxWidth="sm">
           <List>
             <ListItem button className={styles.listItemButton}>
-              <Link href="https://www.sgsquash.com">
+              <Link href="https://www.sgsquash.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <Typography variant="h6" className={styles.linkText}>
                   Singapore Squash Racquets Association
                 </Typography>
               </Link>
             </ListItem>
             <ListItem button className={styles.listItemButton}>
-              <Link href="https://psaworldtour.com">
+              <Link href="https://psaworldtour.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <Typography variant="h6" className={styles.linkText}>
                   PSA World Tour
                 </Typography>

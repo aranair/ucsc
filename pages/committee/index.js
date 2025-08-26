@@ -1,12 +1,10 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import GridList from '@material-ui/core/GridList';
-import Divider from '@material-ui/core/Divider';
-import GridListTile from '@material-ui/core/GridListTile';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
+import Avatar from '@mui/material/Avatar';
+import { makeStyles } from '@mui/styles';
+import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 import members from '../../data/members'
 

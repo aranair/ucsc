@@ -1,7 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@mui/styles';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 import theme from '../theme'
 
@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function About() {
-  const styles = useStyles(theme);
+  const styles = useStyles();
 
   return (
     <Container maxWidth={false} className={styles.container} id='about-us'>

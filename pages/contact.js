@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import Container from '@mui/material/Container';
+import { makeStyles } from '@mui/styles';
+import Typography from '@mui/material/Typography';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -26,7 +26,7 @@ export default function Contact() {
         <Typography variant="h3">Contact Us</Typography>
         <br />
         <Typography variant="h6" className={styles.sectionText}>
-          Please look for us on <a target="_blank" href="https://www.facebook.com/UCSCsingapore/">Facebook</a> or <a href="https://www.instagram.com/ucsc.squash/>Instagram</a>!
+          Please look for us on <a target="_blank" href="https://www.facebook.com/UCSCsingapore/">Facebook</a> or <a href="https://www.instagram.com/ucsc.squash/">Instagram</a>!
         </Typography>
       </Container>
     </Container>

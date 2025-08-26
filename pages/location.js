@@ -1,11 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import Container from '@material-ui/core/Container';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@mui/styles';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Typography from '@mui/material/Typography';
 
 const useStyles = makeStyles((theme) => ({
   homeCourtsContainer: {
@@ -39,9 +37,9 @@ export default function Location() {
         <Grid item md={12}>
           <Typography variant="h4">Home Courts</Typography>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} margin='auto'>
           <Typography variant="h6">
-            Members are invited to come down on any of the social squash days. 
+            Members are invited to come down on any of the social squash days.
             Those who are looking to play competitively are also encouraged to
             represent the club in the Singapore National Squash League.
           </Typography>
@@ -53,7 +51,7 @@ export default function Location() {
           <Typography variant="h4">Yio Chu Kang Squash Centre</Typography>
           <Typography variant='body1'>200 Ang Mo Kio Avenue 9 Singapore 569770</Typography>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={8} margin='auto'>
           <Container>
             <Typography variant="h6">
               Mondays and Wednesdays: 7pm to 10pm

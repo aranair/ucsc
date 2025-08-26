@@ -1,14 +1,12 @@
 import React from 'react';
 import Link from 'next/link'
-import Avatar from '@material-ui/core/Avatar';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import Container from '@material-ui/core/Container';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
+import Avatar from '@mui/material/Avatar';
+import { makeStyles } from '@mui/styles';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 import coaches from '../../data/coaches'
 
@@ -73,7 +71,7 @@ export default function Committee() {
                       {
                         c.link &&
                           <Typography variant="h6">
-                            <Link href={c.link}>
+                            <Link href={c.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 {c.linkText}
                             </Link>
                           </Typography>
