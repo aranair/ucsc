@@ -33,7 +33,7 @@ export default function Location() {
 
   return (
     <Grid container className={styles.homeCourtsContainer} id='location'>
-      <Grid container spacing={2} justify='center' item xs={12} md={6} className={styles.cards}>
+      <Grid container spacing={2} justifyContent="center" item xs={12} md={6} className={styles.cards}>
         <Grid item md={12}>
           <Typography variant="h4">Home Courts</Typography>
         </Grid>
