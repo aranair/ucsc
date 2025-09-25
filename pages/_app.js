@@ -21,7 +21,7 @@ const mainStyles = {
 const footerStyles = {
   width: '100%',
   height: 150,
-  color: '#000000',
+  color: '#FFFFFF',
   background: '#002846',
   borderTop: '1px solid #eaeaea',
   display: 'flex',

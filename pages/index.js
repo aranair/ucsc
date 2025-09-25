@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#000000',
   },
   title: {
-    color: '#000000',
+    color: '#FFFFFF',
     textAlign: 'center',
     fontFamily: 'Lato, sans-serif',
     fontWeight: 700,
