@@ -19,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
   },
   whiteIcon: {
     fontSize: 40,
-    color: 'white',
+    color: '#000000',
   },
   title: {
-    color: 'white',
+    color: '#000000',
     textAlign: 'center',
     fontFamily: 'Lato, sans-serif',
     fontWeight: 700,
